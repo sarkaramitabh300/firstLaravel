@@ -18,9 +18,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/',function(){
-    return view('posts',[
-        'posts' => Post::all()
-    ]);
+    return view('post');
 });
 Route::get('/posts/{post}',function($id){
     return view('post',[
