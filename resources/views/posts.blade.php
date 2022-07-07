@@ -3,19 +3,22 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Posts</title>
+        <title>My Blog</title>
+        <link rel="stylesheet" href="/app.css">
     </head>
 
     <body>
-        <h1>Posts</h1>
+
         <ul>
             @foreach ($posts as $post)
                 <article>
-                    <li>
-                        <a href="/posts/{{ $post->id }}">
-                            {{ $post->title }}
-                        </a>
-                    </li>
+
+                    <a href="/post/{{ $post->id }}">
+                        <h1> {{ $post->title }}</h1>
+                    </a>
+
+                    <div>
+                        <p> {{ $post->excerpt }}</p>
 
                 </article>
             @endforeach
