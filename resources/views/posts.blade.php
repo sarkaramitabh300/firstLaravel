@@ -8,7 +8,7 @@
     </head>
 
     <body>
-
+        <h1>Laravel Tutorials</h1>
         <ul>
             @foreach ($posts as $post)
                 <article>

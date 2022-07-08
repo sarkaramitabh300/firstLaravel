@@ -15,6 +15,7 @@
         <p>{{ $post->body }}</p>
         {{ $post->created_at }}
         {{ $post->updated_at }}
+        <p>gohome</p>
     </article>
     <a href="/">Back</a>
 </body>

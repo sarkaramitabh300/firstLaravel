@@ -27,3 +27,6 @@ Route::get('post/{post}',function($id){
         'post' => Post::findorFail($id)
     ]);
 });
+Route::get('/me',function(){
+    return"<h1>Hello Amitabh</h1>";
+});
